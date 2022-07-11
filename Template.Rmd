@@ -1,0 +1,137 @@
+---
+title: "Template"
+output: 
+  learnr::tutorial:
+  progressive: true
+allow_skip: true
+css: css/style.css
+runtime: shiny_prerendered
+editor_options:
+  chunk_output_type: inline
+---
+  
+```{r include=FALSE}
+source('R/QuickBuildBlock.R')
+```
+
+```{r setup, include=FALSE,message=FALSE}
+library(learnr)
+library(learnrhash)
+library(tidyverse)
+library(gradethis)
+library(openintro)
+tutorial_options(
+  # use gradethis for checking
+  exercise.checker = gradethis::grade_learnr
+)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{js}
+function OpenBlock(x){
+  $(x).parent().parent().children(".ChildContainer").children(".col").children(".ChildBox").toggle(300);
+  $(x).children(".updownicon").toggle(0);
+}
+```
+
+## Rmarkdown Style
+
+Here is an example of a section.
+
+**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+### Rmarkdown Style
+
+Here is a list of styles could be used in the rmarkdown:
+
+- *Italics Text*
+- **Bold Text**
+- superscript^2^
+- ~~strikethrough~~ 
+- `code`
+
+> block quote 
+
+
+Adding Horizontal Line
+
+```{r}
+AddHorizontalLine()
+```
+
+```{r}
+mtcars
+```
+
+## Question Types
+
+<div class="MCQ">
+
+MC Question Example. Answer4 is the correct answer.
+Retry is allowed by adding `allow_retry = TRUE` at the end of the answer list.
+
+```{r quiz1, echo = FALSE}
+
+quiz(caption = "",
+  question("",
+    answer("Answer1", message = "Message shown when answer1 is submitted."),
+  answer("Answer2", message = "Message shown when answer2 is submitted."),
+  answer("Answer3", message = "Message shown when answer3 is submitted."),
+  answer("Answer4", correct = TRUE, message = "Message shown when answer4 is submitted."),
+    allow_retry = TRUE
+  )
+)
+```
+
+</div>
+
+```{r}
+x <- " 
+
+# Title
+- --b--Point 1--b-- : Content
+- Point 2 : Content
+- Point 3 : --b--Content--b--
+
+"
+BuildBlock("InstructionBox",x)
+```
+
+```{r}
+x <- " 
+
+Here is the solutionBox.
+
+"
+BuildBlock("SolutionBox",x)
+```
+
+
+
+```{r learnrExSample, exercise = TRUE, exercise.blanks = "___+" }
+x <-c(1.234,2.342,-4.562,5.671,12.345,-14.567)
+
+mean(___)
+```
+
+```{r learnrExSample-hint-1}
+# Hint 1
+```
+
+```{r learnrExSample-hint-2}
+# Hint 2
+```
+
+```{r learnrExSample-solution, exercise.reveal_solution = FALSE}
+x <-c(1.234,2.342,-4.562,5.671,12.345,-14.567)
+
+mean(x)
+```
+
+
+```{r learnrExSample-check}
+# check code
+gradethis::grade_code()
+``` 
+
