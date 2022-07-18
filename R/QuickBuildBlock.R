@@ -1,10 +1,10 @@
 
 block.data <- data.frame(
-  block_type = c ("QuestionBox","InstructionBox","SolutionBox"), 
-  block_color = c("BlueBox","GreenBox","YellowBox"),
-  icon = c("fa-question-circle","fa-check-circle","fa-cog"),
-  title = c("Question","Instruction","Solution"),
-  open_status = c("TRUE","TRUE","FALSE")
+  block_type = c ("QuestionBox","InstructionBox","SolutionBox","TaskBox"), 
+  block_color = c("BlueBox","GreenBox","YellowBox","BlueBox"),
+  icon = c("fa-question-circle","fa-check-circle","fa-cog","a-pencil"),
+  title = c("Question","Instruction","Solution","Task"),
+  open_status = c("TRUE","TRUE","FALSE","TRUE")
 )
 
 AddHorizontalLine <- function(){
@@ -34,11 +34,17 @@ BuildExerciseBox <- function(ID){
   
 }
 
-BuildBlock <- function(BlockType,Content){
+BuildBlock <- function(BlockType,Content,BlockTitle){
   
+  if(missing(BlockTitle)) {
+    blocktitle <- block.data[block.data$block_type == BlockType, "title"]
+  } else {
+    blocktitle <- BlockTitle
+  }
+    
   blockColor <- block.data[block.data$block_type == BlockType, "block_color"]
   iconUsed <- block.data[block.data$block_type == BlockType, "icon"]
-  blocktitle <- block.data[block.data$block_type == BlockType, "title"]
+  
   openStatus <- block.data[block.data$block_type == BlockType, "open_status"]
   
   
@@ -89,13 +95,13 @@ BuildBlock <- function(BlockType,Content){
           )
       }
       
-      if(grepl("--b--",line)){
+      if(grepl("`",line)){
         
         # highlight
         
         str_list_counter <- 1
         
-        str_list <- strsplit(line, "--b--")[[1]]
+        str_list <- strsplit(line, "`")[[1]]
         
         for (str in str_list){
           if (str_list_counter %% 2 == 0){
@@ -214,13 +220,13 @@ BuildBoxInExBlock <-function(ParentID,BlockType,Content){
           )
       }
       
-      if(grepl("--b--",line)){
+      if(grepl("`",line)){
         
         # highlight
         
         str_list_counter <- 1
         
-        str_list <- strsplit(line, "--b--")[[1]]
+        str_list <- strsplit(line, "`")[[1]]
         
         for (str in str_list){
           if (str_list_counter %% 2 == 0){

@@ -54,7 +54,7 @@ Here is a list of styles could be used in the rmarkdown:
 > block quote 
 
 
-Adding Horizontal Line
+### Adding Horizontal Line
 
 ```{r}
 AddHorizontalLine()
@@ -62,6 +62,12 @@ AddHorizontalLine()
 
 ```{r}
 mtcars
+```
+ 
+### Sample Code
+
+```{r sample1, echo = TRUE}
+summary(mtcars)
 ```
 
 ## Question Types
@@ -90,12 +96,30 @@ quiz(caption = "",
 x <- " 
 
 # Title
-- --b--Point 1--b-- : Content
+- `Point 1` : Content
 - Point 2 : Content
-- Point 3 : --b--Content--b--
+- Point 3 : `Content`
 
 "
 BuildBlock("InstructionBox",x)
+```
+
+```{r}
+x <- " 
+
+Task Box.
+
+"
+BuildBlock("TaskBox",x)
+```
+
+```{r}
+x <- " 
+
+Here is the InstructionBox with customized header.
+
+"
+BuildBlock("InstructionBox",x,"Customized")
 ```
 
 ```{r}
@@ -106,6 +130,8 @@ Here is the solutionBox.
 "
 BuildBlock("SolutionBox",x)
 ```
+
+
 
 
 
