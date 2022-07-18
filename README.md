@@ -4,11 +4,11 @@
 1. You can find this under R/QuickBuildBlock.R
   ```r
   block.data <- data.frame(
-  block_type = c ("QuestionBox","InstructionBox","SolutionBox"), 
-  block_color = c("BlueBox","GreenBox","YellowBox"),
-  icon = c("fa-question-circle","fa-check-circle","fa-cog"),
-  title = c("Question","Instruction","Solution"),
-  open_status = c("TRUE","TRUE","FALSE")
+  block_type = c ("QuestionBox","InstructionBox","SolutionBox","TaskBox"), 
+  block_color = c("BlueBox","GreenBox","YellowBox","BlueBox"),
+  icon = c("fa-question-circle","fa-check-circle","fa-cog","a-pencil"),
+  title = c("Question","Instruction","Solution","Task"),
+  open_status = c("TRUE","TRUE","FALSE","TRUE")
   )
   ```
   
@@ -38,7 +38,7 @@
    ```
    
 3. Style can be used in the box
-   * By adding --b-- infront and behind the text, the text would be highlighted into blue (--b--Example--b--)
+   * By adding ` infront and behind the text, the text would be highlighted into blue (`Example`)
    
    * By adding # infront of the sentence, the sentence would be bolded and larger (#Sentence to be bolded)
    
