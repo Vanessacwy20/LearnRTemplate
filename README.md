@@ -38,7 +38,7 @@
    ```
    
 3. Style can be used in the box
-   * By adding `` infront and behind the text, the text would be highlighted into blue (``Example``)
+   * By adding backtick (`) infront and behind the text, the text would be highlighted into blue (``Example``)
    
    * By adding # infront of the sentence, the sentence would be bolded and larger (#Sentence to be bolded)
    
