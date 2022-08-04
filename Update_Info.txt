@@ -1,0 +1,3 @@
+2022-08-05	Updated style
+		1.  compatible with some of the shiny theme
+		- By changing css: ["css/united/bootstrap.css","css/style_min.css"]  to css: ["css/cosmo/bootstrap.css","css/style_min.css"], the style can be changed from united to cosmo
