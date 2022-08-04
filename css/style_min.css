@@ -1,0 +1,428 @@
+/* Layout */
+
+.pageContent {
+    padding-top: 20px;
+}
+
+
+/* Topic sentences style */
+
+h2:not(.tutorialTitle) {
+    color: var(--bs-primary);
+}
+
+.topics h2:not(.tutorialTitle) {
+    color: var(--bs-primary);
+    padding: 5px;
+    padding-left: 10px;
+    border-left: 5px solid var(--bs-primary);
+}
+
+.topics h3 {
+    color: var(--bs-primary);
+    padding: 5px;
+    padding-left: 10px;
+    border-left: 5px solid var(--bs-primary);
+    font-size: 26px;
+}
+
+.topic {
+    background: white;
+}
+
+#tutorial-topic>.current {
+    background: var(--bs-link-color);
+    color: white;
+}
+
+.tutorialTitle {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.pageContent {
+    background: #f4f4f4;
+}
+
+.topics {
+    background-color: white;
+    padding: 15px;
+}
+
+code {
+    border: 2px solid var(--bs-primary);
+    color: var(--bs-primary);
+    background: white;
+}
+
+.alert>span[data-i18n="text.pleasereplaceblank"]>code {
+    border: none;
+    color: var(--bs-alert-bg);
+    background: white;
+}
+
+pre>code {
+    border: 0px;
+    color: var(--bs-body-color);
+    background: none;
+}
+
+pre.r {
+    border: 0px;
+    background: var(--bs-secondary);
+}
+
+pre.r>code {
+    color: white;
+}
+
+
+/* Alert Box */
+
+.alert {
+    width: auto;
+}
+
+
+/* Font Size */
+
+body {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.topics h3 {
+    font-size: 26px;
+}
+
+.topic {
+    font-size: 25px !important;
+}
+
+.tutorial-exercise-code-editor {
+    font-size: 20px;
+}
+
+.btn {
+    font-size: 20px !important;
+}
+
+.tutorial-panel-heading-left>span {
+    font-size: 20px;
+}
+
+.tutorial-exercise-output>pre {
+    font-size: 20px !important;
+}
+
+.popover-title {
+    font-size: 20px !important;
+}
+
+.popover-content {
+    font-size: 20px !important;
+}
+
+pre {
+    font-size: 20px;
+}
+
+.btn-tutorial-start-over>span,
+.btn-tutorial-hint>span,
+.btn-tutorial-run>span[data-i18n="button.runcode"],
+.btn-tutorial-run>span[data-i18n="button.submitanswer"],
+.btn-tutorial-copy-solution>span[data-i18n="button.copyclipboard"] {
+    padding-left: 15px;
+}
+
+.btn-tutorial-next-hint>span[data-i18n="button.hintnext"],
+.btn-tutorial-next-hint>i {
+    padding-right: 10px;
+}
+
+.btn-tutorial-next-hint {
+    padding-right: 15px !important;
+}
+
+
+/* Extra Block */
+
+
+/*  General Box Style */
+
+.Box {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.Box i {
+    margin-right: 10px;
+}
+
+.col {
+    padding: 10px!important;
+    padding-left: 15px!important;
+}
+
+.Box .BoxTitle {
+    border-radius: 5px 5px 0px 0px!important;
+    font-weight: bold;
+}
+
+.Box .BoxContent {
+    border-radius: 0px 0px 5px 5px!important;
+    padding-left: 38px!important;
+}
+
+.Box p {
+    display: inline;
+}
+
+.Box .BoxContent {
+    overflow-wrap: break-word;
+    padding-right: 15px;
+}
+
+.bandContent {
+    max-width: 1600px;
+}
+
+
+/* Box */
+
+.TitleFont {
+    font-weight: 800;
+    font-size: 30px;
+    margin: 10px 0 10px 0;
+}
+
+.ContentFont {
+    margin: 10px 0 10px 0;
+}
+
+.BoxContainer {
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.028), 0 6px 5px 0 rgba(0, 0, 0, 0.02);
+}
+
+.ExerciseBox .col {
+    border-left: 5px solid #192e3e;
+}
+
+.ExerciseBox .BoxTitle {
+    background-color: #2c5577;
+    color: white;
+}
+
+.ExerciseBox i {
+    color: white;
+}
+
+.ExerciseBox .highlightText {
+    background: #192e3e;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+/* BlueBox */
+
+.BlueBox>.row>.col {
+    border-left: 5px solid #2C5577;
+}
+
+.BlueBox>.row>.BoxTitle>i {
+    color: #2C5577;
+}
+
+.BlueBox>.row>.BoxTitle {
+    background: #BBDEFB;
+    color: #2C5577;
+}
+
+.BlueBox>.row .ChildBox {
+    color: #2C5577;
+}
+
+.BlueBox>.row .ChildBox .highlightText {
+    background-color: #2C5577;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+/* YellowBox */
+
+.YellowBox>.row>.col {
+    border-left: 5px solid #8d5725;
+}
+
+.YellowBox>.row>.BoxTitle>i {
+    color: #8d5725;
+}
+
+.YellowBox>.row>.BoxTitle {
+    background: #FFECB3;
+    color: #8d5725;
+}
+
+.YellowBox>.row .ChildBox {
+    color: #8d5725;
+}
+
+.YellowBox>.row .ChildBox .highlightText {
+    background-color: #8d5725;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+/* RedBox */
+
+.RedBox>.row>.col {
+    border-left: 5px solid #B71C1C;
+}
+
+.RedBox>.row>.BoxTitle>i {
+    color: #B71C1C;
+}
+
+.RedBox>.row>.BoxTitle {
+    background: #FFCDD2;
+    color: #B71C1C;
+}
+
+.RedBox>.row .ChildBox {
+    color: #B71C1C;
+}
+
+.RedBox>.row .ChildBox .highlightText {
+    background-color: #B71C1C;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+/* GreenBox */
+
+.GreenBox>.row>.col {
+    border-left: 5px solid #004D40;
+}
+
+.GreenBox>.row>.BoxTitle>i {
+    color: #004D40;
+}
+
+.GreenBox>.row>.BoxTitle {
+    background: #B2DFDB;
+    color: #004D40;
+}
+
+.GreenBox>.row .ChildBox {
+    color: #004D40;
+}
+
+.GreenBox>.row .ChildBox .highlightText {
+    background-color: #004D40;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+/* Fix Bootstrap Bugs */
+
+.popover {
+    --bs-popover-max-width: none;
+}
+
+.fade:not(.show) {
+    opacity: 1;
+}
+
+.btn-default {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #373a3c;
+    --bs-btn-border-color: #373a3c;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #2f3133;
+    --bs-btn-hover-border-color: #2c2e30;
+    --bs-btn-focus-shadow-rgb: 85, 88, 89;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #2c2e30;
+    --bs-btn-active-border-color: #292c2d;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #373a3c;
+    --bs-btn-disabled-border-color: #373a3c;
+}
+
+
+/* MCQ Style */
+
+.radio,
+.checkbox {
+    padding: 15px;
+}
+
+.MCQ {
+    border: 2px solid #f3f3f3;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.MCQ .panel {
+    border: 0;
+}
+
+.MCQ p {
+    border: 0;
+    margin-bottom: 0;
+}
+
+
+/* Table Style */
+
+thead {
+    background: var(--bs-secondary);
+    color: white;
+}
+
+.pagedtable {
+    padding: 0px;
+}
+
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td,
+.pagedtable-info,
+.pagedtable-index-nav,
+.pagedtable-indexes,
+.pagedtable-index-nav {
+    padding: 10px !important;
+}
+
+
+/* console style */
+
+.panel-default>.panel-heading {
+    background-color: var(--bs-secondary);
+    border: 0px;
+    color: white;
+}
+
+.tutorial-solution-popover .popover-title {
+    background-color: #FFECB3;
+    font-weight: 600;
+    color: #8d5725;
+}

@@ -8,7 +8,7 @@ block.data <- data.frame(
 )
 
 AddHorizontalLine <- function(){
-  div(style="width:100%;border-bottom: 2px solid #767676")
+  div(style="width:100%;border-bottom: 2px solid var(--bs-primary)")
 }
 
 

@@ -4,7 +4,9 @@ output:
   learnr::tutorial:
   progressive: true
 allow_skip: true
-css: css/style.css
+css: ["css/united/bootstrap.css","css/style_min.css"]
+
+
 runtime: shiny_prerendered
 editor_options:
   chunk_output_type: inline
@@ -160,4 +162,3 @@ mean(x)
 # check code
 gradethis::grade_code()
 ``` 
-
