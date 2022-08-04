@@ -1,3 +1,18 @@
+CSS style from https://github.com/thomaspark/bootswatch/
+
+<!-- HOW TO CHANGE STYLE -->
+## How to change style
+1. The following is the compatible styles: cosmo, flatly, journal, minty, pulse, sandstone, sketchy, solar, spacelab, united
+2. Change the css link to link the css file that you want
+* Example:
+  ```
+    css: ["css/united/bootstrap.css","css/style_min.css"]  # Using united style
+  ```
+  to
+  ```
+    css: ["css/cosmo/bootstrap.css","css/style_min.css"]  # Using cosmo style
+  ```
+
 <!-- HOW TO ADD NEW STYLE BOX -->
 ## How to add new style box
 
