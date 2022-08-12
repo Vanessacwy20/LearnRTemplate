@@ -3,3 +3,5 @@
 		- By changing css: ["css/united/bootstrap.css","css/style_min.css"]  
 		to css: ["css/cosmo/bootstrap.css","css/style_min.css"], 
 		the style can be changed from united to cosmo
+		
+2022-08-12	Style file debug
