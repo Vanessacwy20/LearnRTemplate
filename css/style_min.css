@@ -412,6 +412,10 @@ thead {
     padding: 10px !important;
 }
 
+.pagedtable-header-type {
+    color: white;
+}
+
 
 /* console style */
 
