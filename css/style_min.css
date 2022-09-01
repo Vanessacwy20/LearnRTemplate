@@ -11,6 +11,10 @@
     padding-top: 20px;
 }
 
+.topicsList{
+    padding-left: 0px;
+}
+
 
 /* Topic sentences style */
 
@@ -108,7 +112,7 @@ h2 {
 }
 
 .topic {
-    font-size: 25px !important;
+    font-size: 20px !important;
     letter-spacing: 1px;
 }
 
