@@ -487,3 +487,7 @@ thead {
 .modal-backdrop.fade {
     opacity: 0.5 !important;
 }
+
+.topicsContainer,.topicsList {
+  min-width: 220px;
+}
