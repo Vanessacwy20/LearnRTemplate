@@ -489,7 +489,7 @@ thead {
 }
 
 .topicsContainer,.topicsList {
-  min-width: 220px;
+  min-width: 300px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -498,5 +498,8 @@ thead {
     }        
 }
 
+.nav-link{
+    font-size: 20px !important;
+}
 
 
