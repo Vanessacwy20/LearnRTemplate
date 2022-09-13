@@ -12,7 +12,7 @@
 }
 
 .topicsList{
-    padding-left: 0px;
+    padding-left: 0px !important;
 }
 
 
@@ -201,7 +201,7 @@ pre {
 }
 
 .bandContent {
-    max-width: 1600px;
+    /* max-width: 1600px; */
 }
 
 
@@ -491,3 +491,12 @@ thead {
 .topicsContainer,.topicsList {
   min-width: 220px;
 }
+
+@media only screen and (max-width: 767px) {
+    .topicsContainer,.topicsList {
+      min-width: 1px;
+    }        
+}
+
+
+
