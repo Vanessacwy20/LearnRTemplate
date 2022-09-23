@@ -502,4 +502,15 @@ thead {
     font-size: 20px !important;
 }
 
+.topicsList .topic{ 
+    background-image: none; 
+}
+
+p { 
+    line-height: 1.2em;
+}
+
+body{    
+    font-family: 'Source Sans', sans-serif;
+}
 
