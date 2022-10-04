@@ -507,10 +507,16 @@ thead {
 }
 
 p { 
-    line-height: 1em;
+    line-height: 1.2em;
 }
 
 body{    
     font-family: 'Source Sans', sans-serif;
+}
+
+
+.topics li {
+    line-height:1.2em;
+    margin-bottom:20px;
 }
 
